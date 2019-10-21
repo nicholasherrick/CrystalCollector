@@ -24,6 +24,7 @@ body {
 #instructions {
     text-align: center;
     font-size: 18px;
+    line-height: 18px;
     background-color: sandybrown;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -36,7 +37,7 @@ body {
     color: #fff;
     text-align: center;
     font-size: 40px;
-    height: 40px;
+    height: 10px;
     width: 100%;
     margin-bottom: 90px;
 }
@@ -69,8 +70,8 @@ body {
     display:block;
     margin-left:auto;
     margin-right:auto;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 .crystals-width {
@@ -93,4 +94,13 @@ body {
     color: #fff;
     font-size: 60px;
     margin-top: 10px;
+}
+
+/* Reset Button */
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
 }
