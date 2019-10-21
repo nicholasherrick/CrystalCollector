@@ -1,0 +1,96 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|ZCOOL+XiaoWei&display=swap');
+
+/* Header */
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    background-color: coral;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 0;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+body {
+    background-image: url(../images/beanstalk-dark.png);
+}
+
+/* Instructions */
+
+#instructions {
+    text-align: center;
+    font-size: 18px;
+    background-color: sandybrown;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Crimson Text', serif;
+}
+
+/* Win/Loss  + Random Number */
+
+#random-number {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+#match {
+    color: #fff;
+    font-size: 100px;
+}
+
+#wins-losses {
+    color: #fff;
+    font-size: 50px;
+}
+
+#wins {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+#losses {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+/* Crystal Images */
+
+.images {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 200px;
+    height: 200px;
+}
+
+.crystals-width {
+    display: inline-block;
+    width: 24%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Total Score */
+
+#total-score {
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Crimson Text', serif;
+}
+
+#score-number {
+    color: #fff;
+    font-size: 60px;
+    margin-top: 10px;
+}
