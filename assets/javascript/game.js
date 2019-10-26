@@ -25,8 +25,6 @@ $(document).ready(function() {
     function resetGame() {
         randomNumber = Math.floor((Math.random() * 120) + 19);
         console.log("Random Number = " + randomNumber);
-        wins = 0;
-        losses = 0;
         crystal1Value = Math.floor((Math.random() * 12) + 1);
         console.log("Crystal 1 = " + crystal1Value);
         crystal2Value = Math.floor((Math.random() * 12) + 1);
@@ -46,6 +44,27 @@ $(document).ready(function() {
     $("#match").html(randomNumber);
     $("#wins").html(wins);
     $("#losses").html(losses);
+
+    $("#reset-button").on("click", function() {
+        randomNumber = Math.floor((Math.random() * 120) + 19);
+        console.log("Random Number = " + randomNumber);
+        crystal1Value = Math.floor((Math.random() * 12) + 1);
+        console.log("Crystal 1 = " + crystal1Value);
+        crystal2Value = Math.floor((Math.random() * 12) + 1);
+        console.log("Crystal 2 = " + crystal2Value);
+        crystal3Value = Math.floor((Math.random() * 12) + 1);
+        console.log("Crystal 3 = " + crystal3Value);
+        crystal4Value = Math.floor((Math.random() * 12) + 1);
+        console.log("Crystal 4 = " + crystal4Value);
+        wins = 0;
+        losses = 0;
+        totalScore = 0;
+        // Updates HTML with newly generated variables
+        $("#match").html(randomNumber);
+        $("#score-number").html(totalScore);
+        $("#wins").html(wins);
+        $("#losses").html(losses);
+    })
 
     // Functions for clicking on each crystal
 
