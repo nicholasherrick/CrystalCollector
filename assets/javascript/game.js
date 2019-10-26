@@ -48,38 +48,72 @@ $(document).ready(function() {
     $("#crystal-1").on("click", function() {
         totalScore = totalScore + crystal1Value;
         $("#score-number").text(totalScore);
+            // Determine Win/Loss logic
+        if (totalScore > randomNumber) {
+            losses++;
+            $("#losses").html(losses);
+            alert("You Lost!");
+            resetGame();
+        }
+        else if (totalScore === randomNumber) {
+            wins++;
+            $("#wins").html(wins);
+            alert("You Won!");
+            resetGame();
+        }
     });
 
     $("#crystal-2").on("click", function() {
         totalScore = totalScore + crystal2Value;
         $("#score-number").text(totalScore);
+
+        if (totalScore > randomNumber) {
+            losses++;
+            $("#losses").html(losses);
+            alert("You Lost!");
+            resetGame();
+        }
+        else if (totalScore === randomNumber) {
+            wins++;
+            $("#wins").html(wins);
+            alert("You Won!");
+            resetGame();
+        }
     });
 
     $("#crystal-3").on("click", function() {
         totalScore = totalScore + crystal3Value;
         $("#score-number").text(totalScore);
+
+        if (totalScore > randomNumber) {
+            losses++;
+            $("#losses").html(losses);
+            alert("You Lost!");
+            resetGame();
+        }
+        else if (totalScore === randomNumber) {
+            wins++;
+            $("#wins").html(wins);
+            alert("You Won!");
+            resetGame();
+        }
     });
 
     $("#crystal-4").on("click", function() {
         totalScore = totalScore + crystal4Value;
         $("#score-number").text(totalScore);
+
+        if (totalScore > randomNumber) {
+            losses++;
+            $("#losses").html(losses);
+            alert("You Lost!");
+            resetGame();
+        }
+        else if (totalScore === randomNumber) {
+            wins++;
+            $("#wins").html(wins);
+            alert("You Won!");
+            resetGame();
+        }
     });
-    // Determine Win/Loss logic
-    if (totalScore > randomNumber) {
-        losses++;
-        alert("You Lost!");
-        reset();
-    }
-    else if (totalScore === randomNumber) {
-        wins++;
-        alert("You Won!");
-        reset();
-    }
-    // Html Editors
-    
-
-
-
-
-
 });
