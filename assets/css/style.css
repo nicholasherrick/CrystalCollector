@@ -39,12 +39,14 @@ body {
     font-size: 40px;
     height: 10px;
     width: 100%;
-    margin-bottom: 90px;
+    margin-bottom: 170px;
 }
 
 #match {
     color: #fff;
     font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 #wins-losses {
@@ -67,9 +69,9 @@ body {
 /* Crystal Images */
 
 .images {
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 150px;
     height: 150px;
 }

@@ -42,8 +42,8 @@ $(document).ready(function() {
     // Updates the HTML page with global variables
 
     $("#match").html(randomNumber);
-    $("#wins").html(wins);
-    $("#losses").html(losses);
+    $("#wins span").html(wins);
+    $("#losses span").html(losses);
 
     $("#reset-button").on("click", function() {
         randomNumber = Math.floor((Math.random() * 120) + 19);
@@ -62,8 +62,8 @@ $(document).ready(function() {
         // Updates HTML with newly generated variables
         $("#match").html(randomNumber);
         $("#score-number").html(totalScore);
-        $("#wins").html(wins);
-        $("#losses").html(losses);
+        $("#wins span").html(wins);
+        $("#losses span").html(losses);
     })
 
     // Functions for clicking on each crystal
@@ -74,13 +74,13 @@ $(document).ready(function() {
             // Determine Win/Loss logic
         if (totalScore > randomNumber) {
             losses++;
-            $("#losses").html(losses);
+            $("#losses span").html(losses);
             alert("You Lost!");
             resetGame();
         }
         else if (totalScore === randomNumber) {
             wins++;
-            $("#wins").html(wins);
+            $("#wins span").html(wins);
             alert("You Won!");
             resetGame();
         }
@@ -92,13 +92,13 @@ $(document).ready(function() {
 
         if (totalScore > randomNumber) {
             losses++;
-            $("#losses").html(losses);
+            $("#losses span").html(losses);
             alert("You Lost!");
             resetGame();
         }
         else if (totalScore === randomNumber) {
             wins++;
-            $("#wins").html(wins);
+            $("#wins span").html(wins);
             alert("You Won!");
             resetGame();
         }
@@ -110,13 +110,13 @@ $(document).ready(function() {
 
         if (totalScore > randomNumber) {
             losses++;
-            $("#losses").html(losses);
+            $("#losses span").html(losses);
             alert("You Lost!");
             resetGame();
         }
         else if (totalScore === randomNumber) {
             wins++;
-            $("#wins").html(wins);
+            $("#wins span").html(wins);
             alert("You Won!");
             resetGame();
         }
@@ -128,13 +128,13 @@ $(document).ready(function() {
 
         if (totalScore > randomNumber) {
             losses++;
-            $("#losses").html(losses);
+            $("#losses span").html(losses);
             alert("You Lost!");
             resetGame();
         }
         else if (totalScore === randomNumber) {
             wins++;
-            $("#wins").html(wins);
+            $("#wins span").html(wins);
             alert("You Won!");
             resetGame();
         }
