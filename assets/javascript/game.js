@@ -40,29 +40,29 @@ $(document).ready(function() {
         $("#score-number").html(totalScore);
     }
 
-
-
-
     $("#match").html(randomNumber);
     $("#wins").html(wins);
     $("#losses").html(losses);
 
     // Functions for clicking on each crystal
     $("#crystal-1").on("click", function() {
-        crystal1Value + totalScore;
+        totalScore = totalScore + crystal1Value;
         $("#score-number").text(totalScore);
     });
 
     $("#crystal-2").on("click", function() {
-        crystal2Value + totalScore;
+        totalScore = totalScore + crystal2Value;
+        $("#score-number").text(totalScore);
     });
 
     $("#crystal-3").on("click", function() {
-        crystal3Value + totalScore;
+        totalScore = totalScore + crystal3Value;
+        $("#score-number").text(totalScore);
     });
 
     $("#crystal-4").on("click", function() {
-        crystal4Value + totalScore;
+        totalScore = totalScore + crystal4Value;
+        $("#score-number").text(totalScore);
     });
     // Determine Win/Loss logic
     if (totalScore > randomNumber) {
