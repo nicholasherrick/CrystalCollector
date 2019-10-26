@@ -24,21 +24,28 @@ $(document).ready(function() {
 
     function resetGame() {
         randomNumber = Math.floor((Math.random() * 120) + 19);
+        console.log(randomNumber);
         wins = 0;
         losses = 0;
         crystal1Value = Math.floor((Math.random() * 12) + 1);
+        console.log(crystal1Value);
         crystal2Value = Math.floor((Math.random() * 12) + 1);
+        console.log(crystal2Value);
         crystal3Value = Math.floor((Math.random() * 12) + 1);
+        console.log(crystal3Value);
         crystal4Value = Math.floor((Math.random() * 12) + 1);
-        totalScore = "";
+        console.log(crystal4Value);
+        totalScore = 0;
+        $("#match").html(randomNumber);
+        $("#score-number").html(totalScore);
     }
-
-    // Number randomizer for the random number and each crystal
 
 
 
 
     $("#match").html(randomNumber);
+    $("#wins").html(wins);
+    $("#losses").html(losses);
 
     // Functions for clicking on each crystal
     $("#crystal-1").on("click", function() {
@@ -61,10 +68,12 @@ $(document).ready(function() {
     if (totalScore > randomNumber) {
         losses++;
         alert("You Lost!");
+        reset();
     }
     else if (totalScore === randomNumber) {
         wins++;
         alert("You Won!");
+        reset();
     }
     // Html Editors
     
