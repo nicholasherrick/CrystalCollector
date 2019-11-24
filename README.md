@@ -8,7 +8,7 @@ This application makes use of jquery to create a game in which the user must cli
 
 ## Demo
 
-Example: [CLICK HERE](https://nicholasherrick.github.io/unit-4-game/.) to view the application
+Example: [CLICK HERE](https://nicholasherrick.github.io/CrystalCollector/.) to view the application
 
 ![code](assets/images/screenshot2.png)
 
